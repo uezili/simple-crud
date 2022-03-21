@@ -2,10 +2,16 @@
 // conexão
 $connection = new mysqli('localhost', 'root','','cadastro');
 
-// insert
-$sql = "insert into peplo (name, email, birth_date)
-                        value ('Ana Paula', 'ana@gmail.com','21122003')";
 
+// update
+$sql = "update peplo set name = 'Uezili Maciel' where id='1'";
+$connection->query($sql);
+
+
+// insert
+
+$sql = "insert into peplo (name, email, birth_date)
+value ('Ana Paula', 'ana@gmail.com','21122003')";
 $connection->query($sql);
 
 // read
