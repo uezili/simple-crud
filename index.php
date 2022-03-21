@@ -2,6 +2,10 @@
 // conexão
 $connection = new mysqli('localhost', 'root','','cadastro');
 
+// delete
+
+$sql = "delete from peplo where name = 'Ana Paula'";
+$connection->query($sql);
 
 // update
 $sql = "update peplo set name = 'Uezili Maciel' where id='1'";
