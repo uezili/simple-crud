@@ -42,3 +42,10 @@ form {
 textarea {
 	height: 150px;
 }
+
+.logo-ia {
+	height: 430px;
+	display: flex;
+	justify-content: flex-end;
+	clip-path: circle(40%);
+}
